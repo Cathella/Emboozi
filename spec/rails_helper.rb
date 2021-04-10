@@ -66,8 +66,7 @@ RSpec.configure do |config|
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
-  config.fuubar_progress_bar_options = { format: 'Completed Tests <%B> %p%% %a' }
-
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  config.fuubar_progress_bar_options = { format: 'Completed Tests <%B> %p%% %a' }
 end

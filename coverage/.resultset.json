@@ -1,12 +1,45 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/nakitto/odin_on_rails/Emboozi/spec/models/user_spec.rb": {
+      "/home/nakitto/odin_on_rails/Emboozi/spec/routing/stories_routing_spec.rb": {
         "lines": [
           1,
           null,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -604,6 +637,15 @@
           null
         ]
       },
+      "/home/nakitto/odin_on_rails/Emboozi/spec/factories/stories.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/home/nakitto/odin_on_rails/Emboozi/spec/factories/users.rb": {
         "lines": [
           1,
@@ -615,6 +657,7 @@
       },
       "/home/nakitto/odin_on_rails/Emboozi/config/routes.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -653,8 +696,14 @@
           1,
           null
         ]
+      },
+      "/home/nakitto/odin_on_rails/Emboozi/app/helpers/stories_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1618071253
+    "timestamp": 1618077076
   }
 }
