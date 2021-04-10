@@ -8,11 +8,11 @@
           <%= render "devise/shared/error_messages", resource: resource %>
 
           <div class="field mb-3">
-            <%= f.email_field :first_name, autocomplete: "first_name", class: "form-control", placeholder: "First Name" %>
+            <%= f.text_field :first_name, autocomplete: "first_name", class: "form-control", placeholder: "First Name" %>
           </div>
 
           <div class="field mb-3">
-            <%= f.email_field :last_name, autocomplete: "last_name", class: "form-control", placeholder: "Last Name" %>
+            <%= f.text_field :last_name, autocomplete: "last_name", class: "form-control", placeholder: "Last Name" %>
           </div>
 
           <div class="field mb-3">
