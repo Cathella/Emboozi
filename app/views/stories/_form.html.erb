@@ -1,8 +1,6 @@
 <%= form_with(model: story) do |form| %>
   <% if story.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
-
       <ul>
         <% story.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -11,12 +9,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+  <div class="field mb-4">
+    <%= form.rich_text_area :body, class: 'form-control', placeholder: 'Once upon a time ...', style: 'height: 350px' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Post Story", class: "btn btn-primary form-control" %>
   </div>
 <% end %>

@@ -22,6 +22,7 @@ class StoriesController < ApplicationController
   # POST /stories or /stories.json
   def create
     @story = Story.new(story_params)
+    @story.user_id = current_user.id
 
     respond_to do |format|
       if @story.save
@@ -64,6 +65,6 @@ class StoriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def story_params
-      params.require(:story).permit(:user_id)
+      params.require(:story).permit(:body)
     end
 end
