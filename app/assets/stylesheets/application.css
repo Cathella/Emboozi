@@ -195,8 +195,8 @@ p.description {
 
 /* Home page */
 .top-featured {
-  margin: 0 4em 8em 8em;
-  padding: 2em 0 2em 1em;
+  /* margin: 0 4em 8em 8em; */
+  /* padding: 2em 0 2em 1em; */
 }
 
 h1,
@@ -226,26 +226,26 @@ h2 {
 }
 
 .signup-section h2 {
-  margin: 0 0 1em 0;
+  /* margin: 0 0 1em 0; */
 }
 
 .signup-section input,
 .signup-section button {
-  height: 3em;
+  /* height: 3em;
   background: transparent;
   color: white;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, .5);
   padding: 0 0 0 1em;
-  border-radius: 0.25rem;
+  border-radius: 0.25rem; */
 }
 
 .signup-section button {
-  background: white;
+  /* background: white;
   color: #4782f8;
   text-transform: capitalize;
   font-weight: 500;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.1); */
 }
 
 .image-prof {
@@ -294,10 +294,10 @@ h2 {
 }
 
 .top-intro {
-  margin: 0 0 5em 0;
-  padding-left: 0px;
-  padding-right: 0;
-  overflow: hidden;
+  /* margin: 0 0 5em 0; */
+  /* padding-left: 0px; */
+  /* padding-right: 0; */
+  /* overflow: hidden; */
 }
 
 .stories-community {
@@ -426,11 +426,11 @@ footer a:hover {
 
 @media only screen and (max-width: 1257px) {
   .signup-section {
-    padding: 7.5em 1.5em;
+    /* padding: 7.5em 1.5em; */
   }
 
   .top-featured {
-    margin: 0 2em 8em 4em;
+    /* margin: 0 2em 8em 4em; */
   }
 }
 
@@ -440,16 +440,22 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 1199px) {
+  .signup-section {
+    padding: 12em 1em;
+  }
+}
+
 @media only screen and (max-width: 1085px) {
   .top-featured {
-    margin: 0 2em 5em 2em;
-    padding: 2em 0 2em 0em;
+    /* margin: 0 2em 5em 2em; */
+    /* padding: 2em 0 2em 0em; */
   }
 }
 
 @media only screen and (max-width: 1016px) {
   .signup-section {
-    padding: 5em 1.5em;
+    /* padding: 5em 1.5em; */
   }
 
   .signup-section h2 {
@@ -461,7 +467,7 @@ footer a:hover {
   }
 
   .top-intro {
-    margin: 0;
+    /* margin: 0; */
   }
 }
 
@@ -481,6 +487,10 @@ footer a:hover {
   .podcaster-auth {
     margin: 1em 0 1.5em 1em;
   }
+
+  .signup-section {
+    padding: 12em 1em 20em 1em;
+  }
 }
 
 @media only screen and (max-width: 884px) {
@@ -489,7 +499,7 @@ footer a:hover {
   }
 
   .top-featured {
-    margin: 0 0 2em 2em;
+    /* margin: 0 0 2em 2em; */
   }
   
   .stories-community {
@@ -503,7 +513,8 @@ footer a:hover {
   }
 
   .signup-section {
-    padding: 5em 5em;
+    padding: 6em 4em 6em 4em;
+    margin-top: 3em;
   }
 }
 
@@ -523,21 +534,21 @@ footer a:hover {
 
 @media only screen and (max-width: 400px) {
   .signup-section {
-    padding: 3em 1em 1em 1em;
+    /* padding: 3em 1em 1em 1em; */
   }
 
   .top-featured .col-3 {
-    flex: 0 0 40%;
-    max-width: 40%;
+    /* flex: 0 0 40%; */
+    /* max-width: 40%; */
   }
 
   .top-featured .col-9 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    /* flex: 0 0 100%; */
+    /* max-width: 100%; */
   }
 
   .top-featured .w-75 {
-    width: 100% !important;
+    /* width: 100% !important; */
   }
 
   .image-prof {
@@ -546,7 +557,7 @@ footer a:hover {
   }
 
   .top-featured {
-    margin: 0 1em 2em 1em;
+    /* margin: 0 1em 2em 1em; */
   }
 
   .line {
@@ -568,8 +579,8 @@ footer a:hover {
   .top-featured .col-3,
   .podcasts .col-6,
   footer .col-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    /* flex: 0 0 100%; */
+    /* max-width: 100%; */
   }
 
   .image-prof {
