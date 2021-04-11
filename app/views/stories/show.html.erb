@@ -1,9 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <%= render "layouts/side-bar" %>
 
-<p>
-  <strong>User:</strong>
-  <%= @story.user_id %>
-</p>
+    <div class="col-lg-7 ms-auto">
+      <p>
+        <strong>User:</strong>
+        <%= @story.user_id %>
+      </p>
 
-<%= link_to 'Edit', edit_story_path(@story) %> |
-<%= link_to 'Back', stories_path %>
+      <div class="text-muted fs-5">
+        <%= @story.body %>
+      </div>
+
+      <%= link_to 'Edit', edit_story_path(@story) %> |
+      <%= link_to 'Back', stories_path %>
+    </div>
+  </div>
+</div>

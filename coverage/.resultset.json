@@ -1,18 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/nakitto/odin_on_rails/Emboozi/spec/views/stories/index.html.erb_spec.rb": {
+      "/home/nakitto/odin_on_rails/Emboozi/spec/views/stories/show.html.erb_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -761,6 +756,13 @@
       "/home/nakitto/odin_on_rails/Emboozi/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -773,6 +775,6 @@
         ]
       }
     },
-    "timestamp": 1618081557
+    "timestamp": 1618127148
   }
 }

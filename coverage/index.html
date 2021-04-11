@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-10T22:05:57+03:00">2021-04-10T22:05:57+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-11T10:45:48+03:00">2021-04-11T10:45:48+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="yellow">
-  80.65%
+  80.47%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>124</b> relevant lines,
-    <span class="green"><b>100</b> lines covered</span> and
-    <span class="red"><b>24</b> lines missed. </span>
+    <b>128</b> relevant lines,
+    <span class="green"><b>103</b> lines covered</span> and
+    <span class="red"><b>25</b> lines missed. </span>
     (<span class="yellow">
-  80.65%
+  80.47%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7f58903c1bdce33ad5ca4fcaddc86def6246be5b" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">2</td>
+            <td class="red strong cell--number t-file__coverage">80.00 %</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">0.80</td>
             
           </tr>
         
@@ -357,9 +357,9 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#d69978ff1a222493fc633520b6858f422fc087c9" class="src_link" title="spec/views/stories/index.html.erb_spec.rb">spec/views/stories/index.html.erb_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#a9a0553e75751816fd0334969b83fe9012ddbf12" class="src_link" title="spec/views/stories/show.html.erb_spec.rb">spec/views/stories/show.html.erb_spec.rb</a></td>
             <td class="red strong cell--number t-file__coverage">71.43 %</td>
-            <td class="cell--number">19</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">7</td>
             <td class="cell--number">5</td>
             <td class="cell--number">2</td>
@@ -388,8 +388,8 @@
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  80.0%
 </span>
 
       lines covered
@@ -398,9 +398,9 @@
     
 
     <div class="t-line-summary">
-      <b>1</b> relevant lines.
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>5</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -422,7 +422,84 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="2">
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :configure_permitted_parameters, if: :devise_controller?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  protected</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def configure_permitted_parameters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -8274,9 +8351,9 @@
 </div>
 
       
-        <div class="source_table" id="d69978ff1a222493fc633520b6858f422fc087c9">
+        <div class="source_table" id="a9a0553e75751816fd0334969b83fe9012ddbf12">
   <div class="header">
-    <h3>spec/views/stories/index.html.erb_spec.rb</h3>
+    <h3>spec/views/stories/show.html.erb_spec.rb</h3>
     <h4>
       <span class="red">
   71.43%
@@ -8329,7 +8406,7 @@
 
             
 
-            <code class="ruby">RSpec.describe &quot;stories/index&quot;, type: :view do</code>
+            <code class="ruby">RSpec.describe &quot;stories/show&quot;, type: :view do</code>
           </li>
         </div>
       
@@ -8351,7 +8428,7 @@
 
             
 
-            <code class="ruby">    assign(:stories, [</code>
+            <code class="ruby">    @story = assign(:story, Story.create!(</code>
           </li>
         </div>
       
@@ -8362,7 +8439,7 @@
 
             
 
-            <code class="ruby">      Story.create!(</code>
+            <code class="ruby">      user: nil</code>
           </li>
         </div>
       
@@ -8373,7 +8450,7 @@
 
             
 
-            <code class="ruby">        user: nil</code>
+            <code class="ruby">    ))</code>
           </li>
         </div>
       
@@ -8384,7 +8461,7 @@
 
             
 
-            <code class="ruby">      ),</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -8395,40 +8472,40 @@
 
             
 
-            <code class="ruby">      Story.create!(</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">        user: nil</code>
+            
+
+            <code class="ruby">  it &quot;renders attributes in &lt;p&gt;&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="missed" data-hits="0" data-linenumber="11">
             
             
 
             
 
-            <code class="ruby">      )</code>
+            <code class="ruby">    render</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="missed" data-hits="0" data-linenumber="12">
             
             
 
             
 
-            <code class="ruby">    ])</code>
+            <code class="ruby">    expect(rendered).to match(//)</code>
           </li>
         </div>
       
@@ -8445,61 +8522,6 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &quot;renders a list of stories&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">    render</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">    assert_select &quot;tr&gt;td&quot;, text: nil.to_s, count: 2</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
             
             
 
