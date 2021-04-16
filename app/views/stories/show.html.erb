@@ -2,18 +2,30 @@
   <div class="row">
     <%= render "layouts/side-bar" %>
 
-    <div class="col-lg-7 ms-auto">
-      <p>
-        <strong>User:</strong>
-        <%= @story.user_id %>
-      </p>
+    <div class="col-lg-7 ms-auto py-5">
+      <div class="mb-4">
+        <% if current_user %>
+          <%= link_to 'Edit Story', edit_story_path(@story), class: "me-3" %>
+        <% end %>
 
+        <%= link_to 'Back to Stories', stories_path %>
+      </div>
+
+      <p class="fs-6">
+        <strong>Story Author:</strong>
+        <span class="text-muted">
+          <%= @story.user.first_name %> 
+          <%= @story.user.last_name %>
+        </span>
+        <span class="text-muted ms-4">
+          Posted: 
+          <%= @story.created_at %> 
+        </span>
+      </p>
+      <hr>
       <div class="text-muted fs-5">
         <%= @story.body %>
       </div>
-
-      <%= link_to 'Edit', edit_story_path(@story) %> |
-      <%= link_to 'Back', stories_path %>
     </div>
   </div>
 </div>
