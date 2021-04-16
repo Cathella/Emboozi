@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Jost', sans-serif;
-  background-color: rgba(0, 0, 0, .01);
+  // background-color: rgba(0, 0, 0, .01);
+  background: #fbf5ff;
 }
 
 nav {
@@ -26,10 +27,6 @@ nav ul {
 
 .logo a {
   text-decoration: none;
-}
-
-.profile img {
-  // margin-left: 1em;
 }
 
 .profile img,
@@ -128,11 +125,6 @@ p.name {
   font-weight: bold;
 }
 
-p.description {
-  // font-size: 16px;
-  // margin: 0;
-}
-
 
 .post_with_img {
   overflow: hidden;
@@ -196,11 +188,6 @@ p.description {
 }
 
 /* Home page */
-.top-featured {
-  /* margin: 0 4em 8em 8em; */
-  /* padding: 2em 0 2em 1em; */
-}
-
 h1,
 h2 {
   font-weight: 800;
@@ -216,38 +203,35 @@ h2 {
 }
 
 .top-featured .logo a {
-  color: #4782f8;
+  color: #4645a8;
+}
+
+.deep-purple {
+  color: #4645a8;
+}
+
+.bg-deep-purple {
+  background: #4645a8;
 }
 
 /* signup-section */
 .signup-section {
-  background: linear-gradient(60deg, #4782f8, #7262e2);
+  // background: linear-gradient(60deg, #4782f8, #7262e2);
+  background: #4645a8;
   color: white;
   padding: 7.5em 4em;
-  text-align: center;
 }
 
-.signup-section h2 {
-  /* margin: 0 0 1em 0; */
+.color-red {
+  color: #ff0066;
 }
 
-.signup-section input,
-.signup-section button {
-  /* height: 3em;
-  background: transparent;
-  color: white;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, .5);
-  padding: 0 0 0 1em;
-  border-radius: 0.25rem; */
+.bg-purple {
+  background: #cb7ab3;
 }
 
-.signup-section button {
-  /* background: white;
-  color: #4782f8;
-  text-transform: capitalize;
-  font-weight: 500;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.1); */
+.bg-red {
+  background: #ff0066;
 }
 
 .image-prof {
@@ -267,14 +251,14 @@ h2 {
 
 .numbered {
   position: absolute;
-  background: white;
-  color: #4782f8;
+  // background: white;
+  // color: #4782f8;
   bottom: -1em;
   left: 0;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 1.6em;
-  font-weight: 500;
+  // font-weight: 500;
   border-radius: 0 0.25rem 0 0.25rem;
 }
 
@@ -293,13 +277,6 @@ h2 {
 .feat-auth {
   color: #777;
   font-size: .9em;
-}
-
-.top-intro {
-  /* margin: 0 0 5em 0; */
-  /* padding-left: 0px; */
-  /* padding-right: 0; */
-  /* overflow: hidden; */
 }
 
 .stories-community {
@@ -322,7 +299,7 @@ h2 {
 
 .comm-story {
   margin: 2em 0 0 0;
-  background: #eee;
+  // background: #eee;
   padding: 3em 2em 0 2em;
   height: 23em;
 }
@@ -427,13 +404,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1257px) {
-  .signup-section {
-    /* padding: 7.5em 1.5em; */
-  }
-
-  .top-featured {
-    /* margin: 0 2em 8em 4em; */
-  }
+  
 }
 
 @media only screen and (max-width: 1257px) {
@@ -449,27 +420,16 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1085px) {
-  .top-featured {
-    /* margin: 0 2em 5em 2em; */
-    /* padding: 2em 0 2em 0em; */
-  }
+
 }
 
 @media only screen and (max-width: 1016px) {
-  .signup-section {
-    /* padding: 5em 1.5em; */
-  }
-
   .signup-section h2 {
     font-size: 2em;
   }
 
   h1 {
     font-size: 3em;
-  }
-
-  .top-intro {
-    /* margin: 0; */
   }
 }
 
@@ -498,10 +458,6 @@ footer a:hover {
 @media only screen and (max-width: 884px) {
   h1 {
     font-size: 2.5em;
-  }
-
-  .top-featured {
-    /* margin: 0 0 2em 2em; */
   }
   
   .stories-community {
@@ -535,31 +491,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 400px) {
-  .signup-section {
-    /* padding: 3em 1em 1em 1em; */
-  }
-
-  .top-featured .col-3 {
-    /* flex: 0 0 40%; */
-    /* max-width: 40%; */
-  }
-
-  .top-featured .col-9 {
-    /* flex: 0 0 100%; */
-    /* max-width: 100%; */
-  }
-
-  .top-featured .w-75 {
-    /* width: 100% !important; */
-  }
 
   .image-prof {
     height: 100px;
     margin: 0 0em 1em 0;
-  }
-
-  .top-featured {
-    /* margin: 0 1em 2em 1em; */
   }
 
   .line {
@@ -576,13 +511,6 @@ footer a:hover {
 @media only screen and (max-width: 300px) {
   h1 {
     font-size: 2em;
-  }
-
-  .top-featured .col-3,
-  .podcasts .col-6,
-  footer .col-6 {
-    /* flex: 0 0 100%; */
-    /* max-width: 100%; */
   }
 
   .image-prof {

@@ -1,5 +1,5 @@
 <main>
-  <div class="container top-intro mb-5 pb-5">
+  <!-- <div class="container top-intro mb-5 pb-5">
     <div class="row">
       <div class="col-lg-7 col-md-6">
         <div class="top-featured">
@@ -106,22 +106,177 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <div class="container top-intro mb-5 pb-5">
+    <div class="row">
+      <div class="col-lg-5 col-md-6 text-start">
+        <div class="signup-section">
+          <h1 class="mt-4 mb-5">Share Your Experiences with the World</h1>
+          <p class="d-none d-sm-block fs-5">
+            Let us be your voice. Reachout to millions of <br>
+            people that are waiting to go through <br>
+            experiences with you.
+          </p>
+          <div class="mt-5">
+            <%= link_to "Join Our Community", new_user_registration_path, class: "btn bg-purple d-block shadow text-white fw-bold py-2" %>
+            <%= link_to "Login", user_session_path, class: "btn mt-3 d-block text-white py-2 border" %>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mx-auto">
+        <div class="top-featured">
+          <div class="logo my-5">
+            <a href="#" class="fs-3">#Tuwaaye</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('joanna-nix-walkup-V9QIep1zZJI-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">1</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">How I managed to handle a cheating Husband for 3 years</p>
+                    <p class="feat-auth mt-n2">Namusisi Hannah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('joanna-nix-walkup-H4fEMshfwTE-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">2</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">How I started out my fashion house from Owino - downtown</p>
+                    <p class="feat-auth mt-n2 ">Anna Rose</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('melody-jacob-zIviddKCNkc-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">3</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">My family's pressures on getting married</p>
+                    <p class="feat-auth mt-n2 ">Jenny Kinconco</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('matheus-ferrero-rbAmkRXqjn8-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">4</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">Buying a car in this covid19 period</p>
+                    <p class="feat-auth mt-n2">Mary Cathy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('cdc-65_nbwiD3I4-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">5</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">Being smart makes you approachable - my fav shopping places</p>
+                    <p class="feat-auth mt-n2">Nabukenya Julie</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('joanna-nix-walkup-V9QIep1zZJI-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">6</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">How I managed to handle a cheating Husband for 3 years</p>
+                    <p class="feat-auth mt-n2">Namusisi Hannah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('joanna-nix-walkup-H4fEMshfwTE-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">7</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">How I started out my fashion house from Owino - downtown</p>
+                    <p class="feat-auth mt-n2 ">Anna Rose</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row mb-4">
+                <div class="col-3 col-sm-2 col-md-4">
+                  <div class="image-prof">
+                    <%= image_tag('melody-jacob-zIviddKCNkc-unsplash.jpg', :alt => "") %>
+                    <p class="numbered bg-purple fw-bold text-white">8</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-10 col-md-8">
+                  <div class="">
+                    <p class="feat-title">My family's pressures on getting married</p>
+                    <p class="feat-auth mt-n2 ">Jenny Kinconco</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="stories-community">
     <div class="container">
       <div class="d-flex justify-content-between align-items-end">
-        <h1 class="w-50">Stories from the community</h1>
-        <%= link_to "See more", stories_path, class: "btn see-more-stories" %>
+        <h1 class="mb-4 mt-5">Today's Featured Experiences</h1>
       </div>
       <div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="comm-story">
+          <div class="col-lg-3">
+            <div class="comm-story bg-purple">
               <div class="comm-story-image">
                 <%= image_tag('audrey-m-jackson-cAFpd2vqnPE-unsplash.jpg', :alt => "") %>
               </div>
-              <p class="text-center comm-story-p">
+              <p class="text-center comm-story-p text-white">
                 I have lived to see my mother make it out of depression. It was sad seeing her cry every day that went.
               </p>
               <div class="d-flex justify-content-between align-items-start" style="position: relative;">
@@ -130,12 +285,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="comm-story">
+          <div class="col-lg-3">
+            <div class="comm-story bg-purple">
               <div class="comm-story-image">
                 <%= image_tag('joanna-nix-walkup-V9QIep1zZJI-unsplash.jpg', :alt => "") %>
               </div>
-              <p class="text-center comm-story-p">
+              <p class="text-center comm-story-p text-white">
                 The day I lost my job, was the hardest time I had to go through to look after my family - it was very sad.
               </p>
               <div class="d-flex justify-content-between align-items-start" style="position: relative;">
@@ -144,16 +299,30 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="comm-story">
+          <div class="col-lg-3">
+            <div class="comm-story bg-purple">
               <div class="comm-story-image">
                 <%= image_tag('matheus-ferrero-rbAmkRXqjn8-unsplash.jpg', :alt => "") %>
               </div>
-              <p class="text-center comm-story-p">
+              <p class="text-center comm-story-p text-white">
                 Nobody believed when I finally told them that I was raped. I was going to become a depressed mother.
               </p>
               <div class="d-flex justify-content-between align-items-start" style="position: relative;">
                 <p class="comm-story-auth">Grace<br>Kakembo</p>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="comm-story bg-purple">
+              <div class="comm-story-image">
+                <%= image_tag('joanna-nix-walkup-H4fEMshfwTE-unsplash.jpg', :alt => "") %>
+              </div>
+              <p class="text-center comm-story-p text-white">
+                Mum left while I was still young, but thanks to dad, I have never in my life regretted growing up without her.
+              </p>
+              <div class="d-flex justify-content-between align-items-start" style="position: relative;">
+                <p class="comm-story-auth">Josephine<br>Mukasa</p>
                 <div class="line"></div>
               </div>
             </div>
