@@ -2,7 +2,7 @@
   <div class="row">
     <%= render "layouts/intro" %>
     <div class="col-lg-5 mx-auto">
-      <div class="bg-light p-5 border">
+      <div class="p-5">
         <h2 class="text-center mb-5">Sign up</h2>
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -32,7 +32,7 @@
           </div>
 
           <div class="actions">
-            <%= f.submit "Sign up", class: "form-control btn btn-primary mb-3" %>
+            <%= f.submit "Sign up", class: "form-control btn bg-red text-white fw-bold mb-3" %>
           </div>
         <% end %>
 

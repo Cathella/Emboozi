@@ -2,8 +2,8 @@
   <div class="row">
     <%= render "layouts/intro" %>
     <div class="col-lg-5 mx-auto">
-      <div class="bg-deep-purple p-5 border">
-        <h2 class="text-center mb-5 text-white">Log in</h2>
+      <div class="p-5">
+        <h2 class="text-center mb-5">Log in</h2>
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field mb-3">
@@ -17,12 +17,12 @@
           <% if devise_mapping.rememberable? %>
             <div class="field mb-3 text-center">
               <%= f.check_box :remember_me %>
-              <%= f.label :remember_me, class: "text-white" %>
+              <%= f.label :remember_me, class: "" %>
             </div>
           <% end %>
 
           <div class="actions">
-            <%= f.submit "Log in", class: "form-control btn btn-primary mb-3" %>
+            <%= f.submit "Log in", class: "form-control btn bg-red text-white mb-3" %>
           </div>
         <% end %>
 
