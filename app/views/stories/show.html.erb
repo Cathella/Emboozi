@@ -1,0 +1,42 @@
+<%= render "layouts/nav" %>
+<div class="container">
+  <div class="row">
+    <%= render "layouts/side-bar" %>
+
+    <div class="col-lg-8 mx-auto pb-5">
+      <%= render "layouts/inner-nav" %>
+      <div class="row mt-5">
+        <div class="col-lg-10">
+          <p class="fs-6">
+            <strong>Posted by:</strong>
+            <span class="text-muted">
+              <%= @story.user.first_name %> 
+              <%= @story.user.last_name %>
+            </span>
+            <span class="text-muted ms-4">
+              Posted on: 
+              <%= @story.created_at %> 
+            </span>
+            <%= link_to 'Edit Story', edit_story_path(@story), class: "ms-3 no-decoration" %>
+          </p>
+          <hr>
+          <div class="text-muted">
+            <%= @story.body %>
+          </div>
+        </div>
+        <div class="col-lg-1 mx-auto">
+          <div class="">
+            <a href="#" class="text-muted me-4 no-decoration fs-3 mt-5 d-block">
+              <i class="far fa-heart d-block mb-3 color-red"></i>
+              <span class="bg-light rounded px-2 fw-bolder text-muted">0</span>
+            </a>
+            <a href="#" class="text-muted me-4 no-decoration fs-3 mt-5 d-block">
+              <i class="far fa-comment d-block mb-3 deep-purple"></i>
+              <span class="bg-light rounded px-2 fw-bolder text-muted">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<%= form_with(model: story) do |form| %>
+  <% if story.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% story.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field mb-5">
+    <%= form.text_field :title, class: 'form-control fw-bolder input-height fs-5', placeholder: 'Story Title' %>
+  </div>
+
+  <div class="field mb-4">
+    <%= form.rich_text_area :body, class: 'form-control', placeholder: 'Once upon a time ...' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Post Story", class: "btn py-3 bg-red rounded-pill text-white fw-bolder shadow form-control" %>
+  </div>
+<% end %>
