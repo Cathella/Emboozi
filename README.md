@@ -1,5 +1,5 @@
 # Emboozi
-This an on-going project.
+This is an on-going project.
 
 ## About Project
 
