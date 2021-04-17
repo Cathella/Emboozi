@@ -1,9 +1,11 @@
+<%= render "layouts/nav" %>
 <div class="container">
   <div class="row">
-    <div class="col-lg-7 mx-auto">
-      <h2 class="my-5 text-center">New Story</h2>
+    <%= render "layouts/side-bar" %>
+    <div class="col-lg-8 mx-auto">
+      <%= render "layouts/inner-nav" %>
+      <h2 class="mb-4">New Story</h2>
       <%= render 'form', story: @story %>
-      <%= link_to 'Back', stories_path %>
     </div>
   </div>
 </div>
