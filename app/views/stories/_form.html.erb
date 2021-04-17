@@ -9,6 +9,10 @@
     </div>
   <% end %>
 
+  <div class="field mb-5">
+    <%= form.text_field :title, class: 'form-control fw-bolder input-height fs-5', placeholder: 'Story Title' %>
+  </div>
+
   <div class="field mb-4">
     <%= form.rich_text_area :body, class: 'form-control', placeholder: 'Once upon a time ...' %>
   </div>
