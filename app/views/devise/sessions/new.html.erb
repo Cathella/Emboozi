@@ -1,17 +1,17 @@
-<div class="container my-5 py-5">
+<div class="container">
   <div class="row">
     <%= render "layouts/intro" %>
-    <div class="col-lg-5 mx-auto">
+    <div class="col-lg-5 mx-auto mt-5 py-5">
       <div class="p-5">
         <h2 class="text-center mb-5">Log in</h2>
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field mb-3">
-            <%= f.email_field :email, autocomplete: "email", class: "form-control", placeholder: "Email" %>
+            <%= f.email_field :email, autocomplete: "email", class: "form-control input-height fw-bold", placeholder: "Email" %>
           </div>
 
           <div class="field mb-3">
-            <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Password" %>
+            <%= f.password_field :password, autocomplete: "current-password", class: "form-control fw-bolder input-height", placeholder: "Password" %>
           </div>
 
           <% if devise_mapping.rememberable? %>
@@ -22,7 +22,7 @@
           <% end %>
 
           <div class="actions">
-            <%= f.submit "Log in", class: "form-control btn bg-red text-white mb-3" %>
+            <%= f.submit "Log in", class: "form-control btn bg-red text-white mb-3 rounded-pill shadow input-height fw-bold" %>
           </div>
         <% end %>
 
