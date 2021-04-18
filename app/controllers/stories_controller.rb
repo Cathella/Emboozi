@@ -9,6 +9,10 @@ class StoriesController < ApplicationController
 
   # GET /stories/1 or /stories/1.json
   def show
+    @comments = @story.comments
+    @comments_total = @story.comments.count
+
+    @comment = Comment.new
   end
 
   # GET /stories/new
