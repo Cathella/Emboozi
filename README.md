@@ -1,11 +1,14 @@
 # Emboozi
+
 This is an on-going project.
+![](app/assets/images/github2.png)
 
 ## About Project
 
 > I enjoy reading stories and about people's life experiences. This will be a platform where people are welcome to tell their stories to the world. Tell how they built something or how they went through an experience to inspire or even to support others as well as receiving the audience they deserve.
 
 ## Database structure
+
 ```
 User (Devise Model)
 - email:string
@@ -34,9 +37,11 @@ Comment (Model)
 ```
 
 ## Project live demo
-[Live demo]()
+
+[Live demo](https://intense-reaches-16629.herokuapp.com/)
 
 ## Implemented features
+
 - User authentication.
 - User can create/edit a story.
 
@@ -45,17 +50,17 @@ Comment (Model)
 - Install Ruby.
 - Install Ruby on Rails.
 - Install bundle.
-- Run "bundle install" inside the project  folder.
+- Run "bundle install" inside the project folder.
 - Run "rails server" inside the project folder.
 - Go to "https://localhost:3000/"
 
 ## Author
 
 **Nakitto Catherine**
+
 - Linkedin: [Nakitto Catherine](https://www.linkedin.com/in/nakitto-catherine2020)
 - Github: [@Cathella](https://github.com/Cathella)
 - Twitter: [@cathella9](https://twitter.com/cathella9)
-
 
 ## 🤝 Contributing
 
@@ -65,5 +70,3 @@ Feel free to check the issues page.
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-
