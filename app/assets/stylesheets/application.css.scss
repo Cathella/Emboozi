@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav ul {
 }
 
 .logo {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   font-size: 1.4em;
 }
 
@@ -86,7 +86,7 @@ nav ul {
   width: 8em;
   text-align: center;
   margin: 2em 1em 0 0;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .status img {
@@ -132,7 +132,7 @@ p.name {
 .summary {
   list-style: none;
   border-bottom: 1px solid #eee;
-  padding: .7em 0;
+  padding: 0.7em 0;
 }
 
 .summary li {
@@ -154,7 +154,7 @@ p.name {
 }
 
 .reactions li {
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: center;
   margin: 0 0 0 1.2em;
 }
@@ -256,7 +256,7 @@ h2 {
 }
 
 .title-name p {
-  margin: 0 0 0 .5em;
+  margin: 0 0 0 0.5em;
 }
 
 .feat-title {
@@ -265,12 +265,12 @@ h2 {
 
 .feat-auth {
   color: #777;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .stories-community {
   padding: 0 0 8em 0;
-  background: url('img/Yellow_icon.svg.png');
+  background: url("img/Yellow_icon.svg.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 35%;
@@ -334,6 +334,7 @@ h2 {
   text-align: center;
   line-height: 40px;
   border-radius: 1rem 0 0.25rem 0;
+  cursor: pointer;
 }
 
 .no-decoration {
@@ -350,7 +351,6 @@ footer {
 }
 
 @media only screen and (max-width: 1257px) {
-  
 }
 
 @media only screen and (max-width: 1257px) {
@@ -366,7 +366,6 @@ footer {
 }
 
 @media only screen and (max-width: 1085px) {
-
 }
 
 @media only screen and (max-width: 1016px) {
@@ -385,7 +384,7 @@ footer {
   }
 
   .comm-story {
-    padding: 2em .5em 0 .5em;
+    padding: 2em 0.5em 0 0.5em;
   }
 
   .podcaster {
@@ -405,7 +404,7 @@ footer {
   h1 {
     font-size: 2.5em;
   }
-  
+
   .stories-community {
     padding: 2em 0 8em 0;
   }
@@ -437,7 +436,6 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
-
   .image-prof {
     height: 100px;
     margin: 0 0em 1em 0;
