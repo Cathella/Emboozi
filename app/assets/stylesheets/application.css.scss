@@ -353,12 +353,6 @@ footer {
 @media only screen and (max-width: 1257px) {
 }
 
-@media only screen and (max-width: 1257px) {
-  .podcaster {
-    height: 15em;
-  }
-}
-
 @media only screen and (max-width: 1199px) {
   .signup-section {
     padding: 12em 1em;
@@ -387,16 +381,8 @@ footer {
     padding: 2em 0.5em 0 0.5em;
   }
 
-  .podcaster {
-    height: 12em;
-  }
-
-  .podcaster-auth {
-    margin: 1em 0 1.5em 1em;
-  }
-
   .signup-section {
-    padding: 12em 1em 20em 1em;
+    padding: 6em 3em 6em 3em;
   }
 }
 
@@ -416,8 +402,7 @@ footer {
   }
 
   .signup-section {
-    padding: 6em 4em 6em 4em;
-    margin-top: 3em;
+    padding: 6em 3em;
   }
 }
 
@@ -448,7 +433,7 @@ footer {
 
 @media only screen and (max-width: 336px) {
   .podcaster {
-    height: 10em;
+    height: 14em;
   }
 }
 
