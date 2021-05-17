@@ -1,6 +1,6 @@
 <%= div_for comment do %>
-  <p class="text-muted fw-bold">
-    By: <%= comment.user.first_name %> <%= local_time_ago(comment.created_at) %>
-  </p>
+  <div class="text-muted fw-bold">
+    <small><%= comment.user.first_name %> &#183; <%= local_time_ago(comment.created_at) %></small>
+  </div>
   <p class="text-muted"><%= comment.body %></p>
 <% end %>

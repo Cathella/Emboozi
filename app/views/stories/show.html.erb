@@ -4,16 +4,21 @@
     <%= render "layouts/side-bar" %>
 
     <div class="col-lg-8 mx-auto pb-5">
-      <%= render "layouts/inner-nav" %>
       <div class="row mt-5">
         <div class="col-lg-10">
-          <div class="mb-3 fs-4 no-decoration fw-bold color-purple" style="letter-spacing: -0.7px">
+          <div class="mb-3 fs-3 no-decoration fw-bold color-purple" style="letter-spacing: -0.7px">
             <%= @story.title %>
           </div>
 
-          <div class="bg-light mb-4 py-1 px-3 rounded">
-            <span class="text-muted">By: <%= @story.user.first_name %> &#183; </span>
-            <span class="color-purple"><%= local_time_ago(@story.created_at) %></span>
+          <div class="bg-light mb-4 py-1 px-3 rounded d-flex justify-content-between">
+            <div>
+              <span class="text-muted fw-bold">Author: <%= @story.user.first_name %> &#183; </span>
+              <span class="color-purple"><%= local_time_ago(@story.created_at) %></span>
+            </div>
+            <div class="text-muted">
+              <small class=""><i class="far fa-comment deep-purple"></i> &#183 <%= @comments_counter %> Comments</small>
+              <%# <small>0 &#183; Likes</small> %>
+            </div>
           </div>
 
           <div class="text-muted mb-5">

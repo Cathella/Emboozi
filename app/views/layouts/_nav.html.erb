@@ -1,15 +1,10 @@
-<nav class="bg-deep-purple py-3">
-  <div class="container d-flex justify-content-between">
-    <a href="#" class="logo text-white no-decoration">#Tuwaaye</a>
+<nav class="bg-light py-3 shadow-sm border-bottom">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="#" class="logo deep-purple no-decoration">#Tuwaaye</a>
     <div class="">
-      <%= link_to '<i class="fas fa-plus me-1"></i>New Story'.html_safe, new_story_path, class: "text-white me-4 fw-bolder no-decoration" %>
-      <a href="#" class="text-white me-4 fw-bolder no-decoration">
-        <i class="far fa-bell me-1"></i>Notifications
-      </a>
-      <a href="#" class="text-white me-4 fw-bolder no-decoration">
-        <i class="far fa-user-circle me-1"></i>My Account
-      </a>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "text-white fw-bolder no-decoration" %>
+      <%= link_to '<i class="fas fa-plus me-2"></i>Add Story'.html_safe, new_story_path, class: "text-muted me-4 fw-bolder no-decoration" %>
+      <%= link_to '<i class="fas fa-book-open me-2"></i>Read Stories'.html_safe, stories_path, class: "text-muted me-4 fw-bolder no-decoration" %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "text-muted fw-bolder no-decoration" %>
     </div>
   </div>
 </nav>
