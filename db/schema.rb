@@ -54,9 +54,9 @@ ActiveRecord::Schema.define(version: 2021_04_17_161443) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "story_id", null: false
     t.text "body"
+    t.bigint "user_id"
+    t.bigint "story_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["story_id"], name: "index_comments_on_story_id"
@@ -64,8 +64,8 @@ ActiveRecord::Schema.define(version: 2021_04_17_161443) do
   end
 
   create_table "stories", force: :cascade do |t|
-    t.string "title", null: false
-    t.bigint "user_id", null: false
+    t.string "title"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_stories_on_user_id"
@@ -87,7 +87,4 @@ ActiveRecord::Schema.define(version: 2021_04_17_161443) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "comments", "stories"
-  add_foreign_key "comments", "users"
-  add_foreign_key "stories", "users"
 end

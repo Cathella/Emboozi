@@ -1,30 +1,24 @@
 class StoriesController < ApplicationController
+  before_action :authenticate_user!, except: %i[ index show ]
   before_action :set_story, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!
 
-  # GET /stories or /stories.json
   def index
     @stories = Story.all
   end
 
-  # GET /stories/1 or /stories/1.json
   def show
     @comments = @story.comments
-    @comments_total = @story.comments.count
-
+    @comments_counter = @story.comments.count
     @comment = Comment.new
   end
 
-  # GET /stories/new
   def new
     @story = Story.new
   end
 
-  # GET /stories/1/edit
   def edit
   end
 
-  # POST /stories or /stories.json
   def create
     @story = Story.new(story_params)
     @story.user_id = current_user.id
@@ -40,7 +34,6 @@ class StoriesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /stories/1 or /stories/1.json
   def update
     respond_to do |format|
       if @story.update(story_params)
@@ -53,7 +46,6 @@ class StoriesController < ApplicationController
     end
   end
 
-  # DELETE /stories/1 or /stories/1.json
   def destroy
     @story.destroy
     respond_to do |format|
@@ -63,13 +55,12 @@ class StoriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_story
-      @story = Story.find(params[:id])
-    end
+    
+  def set_story
+    @story = Story.find(params[:id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def story_params
-      params.require(:story).permit(:body, :title)
-    end
+  def story_params
+    params.require(:story).permit(:body, :title)
+  end
 end

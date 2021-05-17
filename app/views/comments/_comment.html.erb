@@ -1,9 +1,6 @@
-<div class="mb-3">
-  <div class="bg-light py-2 px-3 rounded-3">
-    <div class="fw-bold">
-      <%= comment.user %>
-    </div>
-    <div class="text-muted"><%= comment.body %></div>
+<%= div_for comment do %>
+  <div class="text-muted fw-bold">
+    <small><%= comment.user.first_name %> &#183; <%= local_time_ago(comment.created_at) %></small>
   </div>
-  <small class="text-muted">Posted on <%= comment.created_at %></small>
-</div>
+  <p class="text-muted"><%= comment.body %></p>
+<% end %>

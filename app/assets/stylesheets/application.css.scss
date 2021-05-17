@@ -448,3 +448,13 @@ footer {
     top: -3em;
   }
 }
+
+.comment {
+  background-color: #f8f9fa;
+  padding: 0.8em 0.8em 0.1em;
+  margin: 0 0 0.4em 0;
+  border-radius: 0.25rem;
+  &:target {
+    background-color: rgb(248, 238, 199);
+  }
+}
